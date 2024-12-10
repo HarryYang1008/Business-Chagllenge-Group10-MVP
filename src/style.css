@@ -1,0 +1,324 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 100vw; /* 限制最大宽度为视口宽度 */
+  max-height: 100vh; /* 限制最大高度为视口高度 */
+  background-color: rgb(175, 215, 166);
+  overflow: hidden; 
+}
+#root{
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 100vw; /* 限制最大宽度为视口宽度 */
+    max-height: 100vh; /* 限制最大高度为视口高度 */
+    background-color: rgb(175, 215, 166);
+    overflow: hidden; 
+  }
+  
+}
+
+.main{
+  grid-template-columns: 1fr 5fr;
+  display: none;
+
+}
+
+
+
+#landing_title{
+  margin-left: 30px;
+  display:flex;
+  text-align: center;
+  font-weight: 700;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(252, 252, 252);
+  font-size: 40pt;
+  text-shadow:6px 6px 5px rgba(6,6,6, 2);
+}
+
+#green_heart{
+
+  position:grid;
+  margin: 20px;
+  top: 30%;
+  left:40%;
+  width:60px
+}
+
+.landing_bottom {
+  margin-left: 20px;
+  appearance: button;
+  background-color: #126c21;
+  border: solid transparent 10px;
+  border-radius: 16px;
+  border-width: 0 0 5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 20px;
+  margin: 10px;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter 0.2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 100%;
+}
+
+input[type="file"]:after,
+.landing_bottom:after {
+  text-shadow: #1f1e1e 2px;
+  background-clip: padding-box;
+  background-color: #45c15a;
+  border: solid transparent 10px;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -3px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+#sign_up{
+  margin-left: 5px;
+  width:400px;
+  
+}
+#sign_in{
+  margin-left: 5px;
+  width:400px;
+}
+
+#skip{
+  margin-left: 5px;
+  width:400px;
+}
+.sign_in_page{
+  flex-direction: column;
+  display:none;
+
+}
+.Sign_main{
+  margin-top:30%;
+}
+
+.back_botton {
+  
+  margin-left: 10px;
+  appearance: button;
+  background-color: #126c21;
+  border: solid transparent 10px;
+  border-radius: 16px;
+  border-width: 0 0 5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  font-family: din-round, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 20px;
+  margin: 10px;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter 0.2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 70px;
+}
+
+
+#username-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 300px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #4caf50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+.sign_up_page{
+  display:none;
+}
+
+.bottom_bar {
+  font-weight: 700;
+  position: fixed; 
+  bottom: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 80px; 
+  background-color: #cdcccc; 
+  color: rgb(27, 26, 26);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center; 
+  justify-items: center; 
+  padding: 0; 
+  z-index: 1000; 
+  border-top: 1px solid #ccc; 
+}
+
+#dash-icon{
+  width:40px;
+  height:40px;
+}
+
+#main-button,#dashboard-button,#profile-button{
+  background-color: transparent;
+  font-weight: 700;
+  color:#1f1e1e
+
+}
+
+#profile-title {
+  display: flex; 
+  align-items: center;
+  justify-content: space-between; 
+  padding: 10px;
+  border: 1px solid #ccc; 
+  border-radius: 8px;
+  background-color: #f5f5f5;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 20px; 
+}
+
+.profile-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.profile-id {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Profile Menu */
+#profile-menu {
+  display: flex;
+  flex-direction: column; 
+  gap: 0; 
+  border: 1px solid #fff; 
+  border-radius: 8px; 
+  background-color: #fff;
+}
+
+.menu-item {
+  text-align: left;
+  background-color: #fff;
+  padding: 15px 15px; 
+  font-size: 14px;
+  color: #333;
+  border-bottom: 1px solid #eee; 
+  cursor: pointer;
+}
+
+.menu-item:last-child {
+  border-bottom: none; 
+}
+
+/* 鼠标悬停效果 */
+.menu-item:hover {
+  background-color: #f5f5f5;
+}
+
+
+
+
+
+
+.mental-main{
+  display:none;
+}
+
+.landing_page{
+  display:block;
+  position: fixed;
+  top: 20%;
+  left: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color:white;
+}
+
+#mental-main-page{
+  display:none;
+}
+
+#mental-dashboard{
+  display:none;
+}
+
+#mental-profile{
+  display:block;
+}

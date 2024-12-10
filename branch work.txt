@@ -1,0 +1,14 @@
+Keeping your branch updated 
+Before you begin working on your branch, update it using the commands shown below. The commands assume that you are pulling changes from main to your own branch. The commands are the same if you want to merge 3 other branches, just replace the branch names appropriately.
+
+now we have 5 branch: juyeon / seolhee / shihao / weikang
+work on your own brach and update it
+(In order to avoid a CONFLICTS, please let teammates know what you did on your branch before you push your own branch to the main branch)
+
+$ git checkout main	 		# Switches to main branch.
+$ git pull				# Pulls current code in main branch.
+$ git checkout own_branch(your name)	# Switches to own_branch
+$ git merge testdev			# merges own_branch with main branch. Merge 
+# conflicts could happen.
+
+Now your local branch will have the updated commits from the main remote branch.
