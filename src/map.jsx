@@ -51,6 +51,8 @@ class MapComponent extends Component {
     main_page.style.display = 'block';
     const main_page_dash= document.getElementById('mental-main-page');
     main_page_dash.style.display = 'block';
+    const second_layer= document.getElementById('second_layer');
+    second_layer.style.display = 'none';
     const mental_dashboard= document.getElementById('mental-dashboard');
     mental_dashboard.style.display = 'none';
     const mental_profile= document.getElementById('mental-profile');
@@ -68,6 +70,8 @@ class MapComponent extends Component {
     main_page_dash.style.display = 'block';
     const mental_dashboard= document.getElementById('mental-dashboard');
     mental_dashboard.style.display = 'none';
+    const second_layer= document.getElementById('second_layer');
+    second_layer.style.display = 'none';
     const mental_profile= document.getElementById('mental-profile');
     mental_profile.style.display = 'none';
     const sign_in_page = document.getElementById('sign_in_page');
@@ -84,6 +88,8 @@ class MapComponent extends Component {
     mental_dashboard.style.display = 'block';
     const mental_profile= document.getElementById('mental-profile');
     mental_profile.style.display = 'none';
+    const second_layer= document.getElementById('second_layer');
+    second_layer.style.display = 'none';
     const main_page= document.getElementById('mental-main-page');
     main_page.style.display = 'none';
     const sign_in_page = document.getElementById('sign_in_page');
@@ -97,6 +103,27 @@ class MapComponent extends Component {
   show_profile = () => {
     const mental_profile= document.getElementById('mental-profile');
     mental_profile.style.display = 'block';
+    const second_layer= document.getElementById('second_layer');
+    second_layer.style.display = 'none';
+    const mental_dashboard= document.getElementById('mental-dashboard');
+    mental_dashboard.style.display = 'none';
+    const main_page= document.getElementById('mental-main-page');
+    main_page.style.display = 'none';
+    const sign_in_page = document.getElementById('sign_in_page');
+    sign_in_page.style.display = 'none';
+    const sign_up_page = document.getElementById('sign_up_page');
+    sign_up_page.style.display = 'none';
+    const landing_page= document.getElementById('landing_page');
+    landing_page.style.display = 'none';
+  }
+
+  show_contact_page = () => {
+    const second_layer= document.getElementById('second_layer');
+    second_layer.style.display = 'block';
+    const contact_us_page= document.getElementById('contact-us-detailed');
+    contact_us_page.style.display = 'block';
+    const mental_profile= document.getElementById('mental-profile');
+    mental_profile.style.display = 'none';
     const mental_dashboard= document.getElementById('mental-dashboard');
     mental_dashboard.style.display = 'none';
     const main_page= document.getElementById('mental-main-page');
@@ -223,7 +250,7 @@ class MapComponent extends Component {
                   type="text"
                   id="username"
                   name="username"
-                  placeholder="Enter your username"
+                  placeholder="Enter your Email"
                   required
                   minlength="3"
                   maxlength="20"
@@ -267,12 +294,12 @@ class MapComponent extends Component {
           </div>
         </div>
 
-
-{/* <!-----------------------------------------------------------------------------------------------> */}
+      <div>
+        {/* <!------------------------------ Main Page of Application----------------------------------------------------------------> */}
         <div className="mental-main" id="mental-main">
           <buttom className="back_botton" id="back_sign_in" onClick={this.back_sign}>back</buttom>
           {/*--------------------------------- Bottom Bar ------------------------------- */}
-          <div className="bottom_bar" >
+          <div className="bottom_bar" id="bottom_bar">
             <button id = "main-button" onClick={this.show_main_page }>
               <div>
                 <img id= "dash-icon"
@@ -313,7 +340,9 @@ class MapComponent extends Component {
               this is the dashboard of user's emotional data
             </div>
           </div>
-          {/*-------------------------------- user profile  page ------------------------------ */}
+          {/*-------------------------------- user profile  page --------------------------------------------
+          # contain the Entry for the Below menu item:
+           Mange My Account/ Change Subscription / Mental Assesement History / Contack Us /  */}
           <div className="mental-profile" id="mental-profile">
             <div>
 
@@ -326,7 +355,7 @@ class MapComponent extends Component {
                 <button class="menu-item">Manage My Account</button>
                 <button class="menu-item">Change Subscription</button>
                 <button class="menu-item">Mental Assesement History</button>
-                <button class="menu-item">Contact Us</button>
+                <button class="menu-item" onClick = {this.show_contact_page}>Contact Us</button>
               </div>
 
             </div>
@@ -334,7 +363,45 @@ class MapComponent extends Component {
 
         </div>
 
+
+        {/*---------------------------------- 2nd layer of User Main page  ----------------------------------------------------------------> */}
+        <div className = "second_layer" id="second_layer">
+          2nd layer
+          <div id="contact-us-detailed">
+            
+            <form id="username-form">
+              <label for="username">Put your suggest or message here:</label>
+              <textarea
+                id="user-contact-message"
+                name="username"
+                placeholder="Input your message here"
+                required
+                minlength="3"
+                pattern="^[a-zA-Z0-9_]+$"
+                autocomplete="off"
+              ></textarea>
+            </form>
+
+            <form id="username-form">
+              <label for="username">Email:</label>
+              <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Enter your contact E-mail"
+                required
+                minlength="3"
+                pattern="^[a-zA-Z0-9_]+$"
+                autocomplete="off"
+              />
+            </form>
+            
+          </div>
+
+        </div>
+
         
+        </div>
       </div>
     );
   }
