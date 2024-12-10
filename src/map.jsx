@@ -38,6 +38,8 @@ class MapComponent extends Component {
   back_sign = () => {
     const landing_page= document.getElementById('landing_page');
     landing_page.style.display = 'block';
+    const second_layer= document.getElementById('second_layer');
+    second_layer.style.display = 'none';
     const sign_in_page = document.getElementById('sign_in_page');
     sign_in_page.style.display = 'none';
     const sign_up_page = document.getElementById('sign_up_page');
