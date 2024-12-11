@@ -1,21 +1,14 @@
-import React, { Component } from "react";
-import "leaflet/dist/leaflet.css";
+import React,{Component} from "react";
 import "./style.css";
+import Slider from './Slider';
 import greenHeart from './green_heart.png';
 import usericon from './icon.png';
 import dashboard_icon from './dashboard_icon.png';
 import user_dash from './user_dash.png';
 import heart_dash from './heart_dash.png';
 class MapComponent extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      map: null,
-      geojsonLayer: null, // Store the GeoJSON layer
-    };
-    this.mapContainerRef = React.createRef();
-    this.mapInitialized = false; // Track if the map has been initialized
-  }
+
+
   
 ////////////////////// PAGE Show //////////////
 
@@ -138,6 +131,7 @@ class MapComponent extends Component {
     landing_page.style.display = 'none';
   }
 
+  
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -163,7 +157,7 @@ class MapComponent extends Component {
 
 {/* <!------------------------ Landing Page--------------------------------------------------------------> */}
         <div className="landing_page" id = "landing_page">
-          <div id="landing_title">MENTAL APP</div>
+          <div id="landing_title">EASY CARE</div>
 
           <div>
             <img id= "green_heart"
@@ -180,7 +174,7 @@ class MapComponent extends Component {
         <div className="sign_in_page" id="sign_in_page">
           <buttom className="back_botton" id="back_sign_in"onClick={this.back_sign }>back</buttom>
           <div className="Sign_main">
-            <div id="landing_title">MENTAL APP</div>
+            <div id="landing_title">EASY CARE</div>
             <div>
               <img id= "green_heart"
                   src={usericon}
@@ -226,7 +220,7 @@ class MapComponent extends Component {
         <div className="sign_up_page" id="sign_up_page">
           <buttom className="back_botton" id="back_sign_in"onClick={this.back_sign }>back</buttom>
           <div className="Sign_main">
-            <div id="landing_title">MENTAL APP</div>
+            <div id="landing_title">EASY CARE</div>
             <div>
               <img id= "green_heart"
                   src={usericon}
@@ -332,8 +326,46 @@ class MapComponent extends Component {
           </div>
           {/*--------------------------------- main page contain ------------------------------- */}
           <div className="mental-main-page" id="mental-main-page">
-            <div>
-              this is the main page of the application 
+              
+            <div className="card">
+              <h2 className="card-title">Emotional exercise</h2>
+              <div className="exercise-list">
+                <div className="exercise-item">
+                  <span>exercise1</span>
+                  <i className="icon">⚡</i> 
+                </div>
+                <div className="exercise-item">
+                  <span>exercise2</span>
+                  <i className="icon">⭐</i> 
+                </div>
+                <div className="exercise-item">
+                  <span>exercise3</span>
+                  <i className="icon">🔥</i>
+                </div>
+              </div>
+            </div>
+
+            <div className="card" id = "">
+              <h2 className="card-title">Therapy Informations</h2>
+              <div className="exercise-list">
+                <div className="exercise-item">
+                  <span>Therapy Sites 1</span>
+                  <i className="icon">⚡</i> 
+                </div>
+                <div className="exercise-item">
+                  <span>Therapy Sites 2</span>
+                  <i className="icon">⭐</i> 
+                </div>
+                <div className="exercise-item">
+                  <span>Therapy Sites 3</span>
+                  <i className="icon">🔥</i>
+                </div>
+              </div>
+            </div>
+              
+            <div className="card-news" id="NEWS">
+              <h2 className="card-news-title">NEWS</h2>
+              <Slider />
             </div>
           </div>
           {/*------------------------------- mental data dashboard page ------------------------ */}
@@ -394,7 +426,7 @@ class MapComponent extends Component {
                 required
                 minlength="3"
                 pattern="^[a-zA-Z0-9_]+$"
-                autocomplete="off"
+                  autocomplete="off"
               />
             </form>
             
