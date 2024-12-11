@@ -1,19 +1,22 @@
 {
   "files": {
-    "main.css": "/Business-Chagllenge-Group10-MVP/static/css/main.4c0e6bd5.css",
-    "main.js": "/Business-Chagllenge-Group10-MVP/static/js/main.a56f129d.js",
+    "main.css": "/Business-Chagllenge-Group10-MVP/static/css/main.25e2b33a.css",
+    "main.js": "/Business-Chagllenge-Group10-MVP/static/js/main.baef829f.js",
     "static/js/787.4bbbca62.chunk.js": "/Business-Chagllenge-Group10-MVP/static/js/787.4bbbca62.chunk.js",
     "static/media/green_heart.png": "/Business-Chagllenge-Group10-MVP/static/media/green_heart.dac2a576b15caab2723d.png",
+    "static/media/news1.jpg": "/Business-Chagllenge-Group10-MVP/static/media/news1.fd695674a6a07eafe87d.jpg",
+    "static/media/news2.jpg": "/Business-Chagllenge-Group10-MVP/static/media/news2.6bb14074f8f93d983d32.jpg",
     "static/media/user_dash.png": "/Business-Chagllenge-Group10-MVP/static/media/user_dash.af2e2cd8af33356ab34e.png",
+    "static/media/news3.jpg": "/Business-Chagllenge-Group10-MVP/static/media/news3.7cece15ea5cef126f1e4.jpg",
     "static/media/dashboard_icon.png": "/Business-Chagllenge-Group10-MVP/static/media/dashboard_icon.10247751470c76a422ee.png",
     "static/media/logo.svg": "/Business-Chagllenge-Group10-MVP/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/Business-Chagllenge-Group10-MVP/index.html",
-    "main.4c0e6bd5.css.map": "/Business-Chagllenge-Group10-MVP/static/css/main.4c0e6bd5.css.map",
-    "main.a56f129d.js.map": "/Business-Chagllenge-Group10-MVP/static/js/main.a56f129d.js.map",
+    "main.25e2b33a.css.map": "/Business-Chagllenge-Group10-MVP/static/css/main.25e2b33a.css.map",
+    "main.baef829f.js.map": "/Business-Chagllenge-Group10-MVP/static/js/main.baef829f.js.map",
     "787.4bbbca62.chunk.js.map": "/Business-Chagllenge-Group10-MVP/static/js/787.4bbbca62.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4c0e6bd5.css",
-    "static/js/main.a56f129d.js"
+    "static/css/main.25e2b33a.css",
+    "static/js/main.baef829f.js"
   ]
 }
