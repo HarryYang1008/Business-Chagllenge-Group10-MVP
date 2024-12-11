@@ -6,6 +6,11 @@ import usericon from './icon.png';
 import dashboard_icon from './dashboard_icon.png';
 import user_dash from './user_dash.png';
 import heart_dash from './heart_dash.png';
+import dash1 from './dash1.jpg';
+import dash2 from './dash2.jpg';
+import dash3 from './dash3.jpg';
+import dash4 from './dash4.jpg';
+import dash5 from './dash5.jpg';
 class MapComponent extends Component {
 
 
@@ -139,21 +144,6 @@ class MapComponent extends Component {
   render() {
     return (
       <div>
-        <>
-          {/* <!-- Import the LEAFLET CSS filr here--> */}
-          <link
-            rel="stylesheet"
-            href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
-            integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
-            crossOrigin=""
-          />
-          {/* <!-- Make sure you put this AFTER Leaflet's CSS --> */}
-          <script
-            src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
-            integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
-            crossOrigin=""
-          ></script>
-        </>
 
 {/* <!------------------------ Landing Page--------------------------------------------------------------> */}
         <div className="landing_page" id = "landing_page">
@@ -293,7 +283,7 @@ class MapComponent extends Component {
       <div>
         {/* <!------------------------------ Main Page of Application----------------------------------------------------------------> */}
         <div className="mental-main" id="mental-main">
-          <buttom className="back_botton" id="back_sign_in" onClick={this.back_sign}>back</buttom>
+          <buttom className="top-bar" id="top-bar" onClick={this.back_sign}>EASY CARE</buttom>
           {/*--------------------------------- Bottom Bar ------------------------------- */}
           <div className="bottom_bar" id="bottom_bar">
             <button id = "main-button" onClick={this.show_main_page }>
@@ -332,7 +322,7 @@ class MapComponent extends Component {
               <div className="exercise-list">
                 <div className="exercise-item">
                   <span>exercise1</span>
-                  <i className="icon">⚡</i> 
+                  <div className="icon">⚡</div> 
                 </div>
                 <div className="exercise-item">
                   <span>exercise2</span>
@@ -340,7 +330,7 @@ class MapComponent extends Component {
                 </div>
                 <div className="exercise-item">
                   <span>exercise3</span>
-                  <i className="icon">🔥</i>
+                  <div className="icon">🔥</div>
                 </div>
               </div>
             </div>
@@ -350,15 +340,15 @@ class MapComponent extends Component {
               <div className="exercise-list">
                 <div className="exercise-item">
                   <span>Therapy Sites 1</span>
-                  <i className="icon">⚡</i> 
+                  <div className="icon">❤️</div> 
                 </div>
                 <div className="exercise-item">
                   <span>Therapy Sites 2</span>
-                  <i className="icon">⭐</i> 
+                  <div className="icon">🤗</div> 
                 </div>
                 <div className="exercise-item">
                   <span>Therapy Sites 3</span>
-                  <i className="icon">🔥</i>
+                  <div className="icon">😺</div>
                 </div>
               </div>
             </div>
@@ -370,8 +360,29 @@ class MapComponent extends Component {
           </div>
           {/*------------------------------- mental data dashboard page ------------------------ */}
           <div className="mental-dashbord" id="mental-dashboard">
-            <div>
-              this is the dashboard of user's emotional data
+            <h2>Emotional Data</h2>
+            <div className="card-container">
+                
+                <div className="dashboard-large-card">
+                  <img className="dashimg" src={dash1} alt="Green Heart"></img>
+                </div>
+
+                <div className="dashboard-card">
+                  <img className="dashimg" src={dash2} alt="Green Heart"></img>
+                </div>
+
+                <div className="dashboard-card">
+                  <img className="dashimg" src={dash3} alt="Green Heart"></img>
+                </div>
+
+                <div className="dashboard-card">
+                  <img className="dashimg" src={dash4} alt="Green Heart"></img>
+                </div>
+
+                <div className="dashboard-card">
+                  <img className="dashimg" src={dash5} alt="Green Heart"></img>
+                </div>
+              
             </div>
           </div>
           {/*-------------------------------- user profile  page --------------------------------------------
