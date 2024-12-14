@@ -455,7 +455,6 @@ h2 {
 .second_layer{
   display: block;
   overflow: scroll;
-  margin-top:20px;
   margin-bottom: 80px;
 }
 .mental-main{
@@ -465,12 +464,12 @@ h2 {
 #Manage_Page{
   display:none;
   overflow: scroll;
-  
+  margin-bottom: 80px;
 }
 
 #change_subscription{
   display:none;
-
+  margin-bottom: 80px;
 }
 
 
