@@ -11,6 +11,7 @@ import dash2 from './dash2.jpg';
 import dash3 from './dash3.jpg';
 import dash4 from './dash4.jpg';
 import dash5 from './dash5.jpg';
+import plan1 from './plan1.png';
 class MapComponent extends Component {
 
 
@@ -122,6 +123,56 @@ class MapComponent extends Component {
     second_layer.style.display = 'block';
     const contact_us_page= document.getElementById('contact-us-detailed');
     contact_us_page.style.display = 'block';
+    const change_subscription = document.getElementById('change_subscription');
+    change_subscription.style.display = 'none';
+    const ManagePage=document.getElementById('Manage_Page');
+    ManagePage.style.display = 'none';
+    const mental_profile= document.getElementById('mental-profile');
+    mental_profile.style.display = 'none';
+    const mental_dashboard= document.getElementById('mental-dashboard');
+    mental_dashboard.style.display = 'none';
+    const main_page= document.getElementById('mental-main-page');
+    main_page.style.display = 'none';
+    const sign_in_page = document.getElementById('sign_in_page');
+    sign_in_page.style.display = 'none';
+    const sign_up_page = document.getElementById('sign_up_page');
+    sign_up_page.style.display = 'none';
+    const landing_page= document.getElementById('landing_page');
+    landing_page.style.display = 'none';
+  }
+
+  show_Manage_page = () => {
+    const second_layer= document.getElementById('second_layer');
+    second_layer.style.display = 'block';
+    const ManagePage=document.getElementById('Manage_Page');
+    ManagePage.style.display = 'block';
+    const contact_us_page= document.getElementById('contact-us-detailed');
+    contact_us_page.style.display = 'none';
+    const change_subscription = document.getElementById('change_subscription');
+    change_subscription.style.display = 'none';
+    const mental_profile= document.getElementById('mental-profile');
+    mental_profile.style.display = 'none';
+    const mental_dashboard= document.getElementById('mental-dashboard');
+    mental_dashboard.style.display = 'none';
+    const main_page= document.getElementById('mental-main-page');
+    main_page.style.display = 'none';
+    const sign_in_page = document.getElementById('sign_in_page');
+    sign_in_page.style.display = 'none';
+    const sign_up_page = document.getElementById('sign_up_page');
+    sign_up_page.style.display = 'none';
+    const landing_page= document.getElementById('landing_page');
+    landing_page.style.display = 'none';
+  }
+
+  show_subscription_page = () => {
+    const change_subscription = document.getElementById('change_subscription');
+    change_subscription.style.display = 'block';
+    const second_layer= document.getElementById('second_layer');
+    second_layer.style.display = 'block';
+    const ManagePage=document.getElementById('Manage_Page');
+    ManagePage.style.display = 'none';
+    const contact_us_page= document.getElementById('contact-us-detailed');
+    contact_us_page.style.display = 'none';
     const mental_profile= document.getElementById('mental-profile');
     mental_profile.style.display = 'none';
     const mental_dashboard= document.getElementById('mental-dashboard');
@@ -397,8 +448,8 @@ class MapComponent extends Component {
               </div>
 
               <div id="profile-menu">
-                <button class="menu-item">Manage My Account</button>
-                <button class="menu-item">Change Subscription</button>
+                <button class="menu-item" onClick ={this.show_Manage_page}>Manage My Account</button>
+                <button class="menu-item"  onClick ={this.show_subscription_page}>Change Subscription</button>
                 <button class="menu-item">Mental Assesement History</button>
                 <button class="menu-item" onClick = {this.show_contact_page}>Contact Us</button>
               </div>
@@ -411,7 +462,7 @@ class MapComponent extends Component {
 
         {/*---------------------------------- 2nd layer of User Main page  ----------------------------------------------------------------> */}
         <div className = "second_layer" id="second_layer">
-          2nd layer
+
           <div id="contact-us-detailed">
             
             <form id="username-form">
@@ -442,6 +493,99 @@ class MapComponent extends Component {
             </form>
             
           </div>
+            
+          
+          <div className="Manage Page" id="Manage_Page">
+            <div className="Sign_main">
+              <div>
+                <img id= "green_heart"
+                    src={usericon}
+                    alt="Green Heart"
+                  />
+                <form id="username-form">
+                  <label for="username">Change Username:</label>
+                  <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    placeholder="User 123456"
+                    required
+                    minlength="3"
+                    maxlength="20"
+                    pattern="^[a-zA-Z0-9_]+$"
+                    autocomplete="off"
+                  />
+                </form>
+                <form id="username-form">
+                  <label for="username">Change Email:</label>
+                  <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    placeholder="123@gmail.com"
+                    required
+                    minlength="3"
+                    maxlength="20"
+                    pattern="^[a-zA-Z0-9_]+$"
+                    autocomplete="off"
+                  />
+                </form>
+                <form id="username-form">
+                  <label for="username">Change password:</label>
+                  <input
+                    type="text"
+                    id="password"
+                    name="username"
+                    placeholder="Enter your new password"
+                    required
+                    minlength="3"
+                    maxlength="20"
+                    pattern="^[a-zA-Z0-9_]+$"
+                    autocomplete="off"
+                  />
+                </form>
+                <form id="username-form">
+                  <label for="username">re-enter new password:</label>
+                  <input
+                    type="text"
+                    id="password"
+                    name="username"
+                    placeholder="Enter your new password"
+                    required
+                    minlength="3"
+                    maxlength="20"
+                    pattern="^[a-zA-Z0-9_]+$"
+                    autocomplete="off"
+                  />
+                </form>
+                <form>
+                  <button type="submit" onClick={this.show_main }>submit</button>
+                </form>
+              </div>
+              
+            </div>
+          </div>
+            
+          <div className="change_suscription" id="change_subscription">
+            
+              <div className="card-container">
+              <h2>Your Current Plan</h2>
+              <div className="Plan-large-card">
+              <img className="dashimg" src={plan1} alt="User Avatar" />
+              </div>
+              <h2>Other Plans</h2>
+              <div className="Plan-large-card">
+               Plan 2
+              </div>
+              <div className="Plan-large-card">
+                Plan 3
+              </div>
+            </div>
+              
+          </div>
+              
+
+          
 
         </div>
 
