@@ -9,6 +9,11 @@ html, body {
   background-color: rgb(175, 215, 166);
   
 }
+
+textarea{
+  width: 400px;
+  max-width: 100vw; 
+}
 #root{
   html, body {
     margin: 0;

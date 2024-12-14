@@ -1,6 +1,8 @@
 import React,{Component} from "react";
 import "./style.css";
 import Slider from './Slider';
+
+import SentimentAnalysis from "./language_analysis.js";
 import greenHeart from './green_heart.png';
 import usericon from './icon.png';
 import dashboard_icon from './dashboard_icon.png';
@@ -433,8 +435,13 @@ class MapComponent extends Component {
                 <div className="dashboard-card">
                   <img className="dashimg" src={dash5} alt="Green Heart"></img>
                 </div>
+
+               
+              </div>
+              <div>
+                  <SentimentAnalysis />
+                </div>
               
-            </div>
           </div>
           {/*-------------------------------- user profile  page --------------------------------------------
           # contain the Entry for the Below menu item:
