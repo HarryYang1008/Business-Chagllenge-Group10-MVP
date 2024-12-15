@@ -49,7 +49,7 @@ const SentimentAnalysis = () => {
   
   return (
     <div style={{ padding: "20px" }}>
-      <h1>Emotinal Diary</h1>
+      <h1>Emotional Diary</h1>
       <textarea
         rows="5"
         cols="50"
