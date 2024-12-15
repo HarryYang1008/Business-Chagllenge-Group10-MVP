@@ -37,7 +37,7 @@ textarea{
 
 
 #landing_title{
-  margin-left: 55px;
+  margin-left: 27%;
   display:flex;
   text-align: center;
   font-weight: 700;
@@ -48,12 +48,11 @@ textarea{
 }
 
 #green_heart{
-
   position:grid;
   margin: 20px;
   top: 30%;
   left:40%;
-  width:60px
+  width:100px
 }
 
 .landing_bottom {
@@ -214,7 +213,7 @@ button:hover {
   display:fixed;
   text-align: center;
   padding-top:5px;
-  padding-left:33%;
+  padding-left:40%;
   padding-bottom:10px;
   display:flex;
   text-align: center;

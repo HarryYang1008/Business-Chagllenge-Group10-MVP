@@ -200,7 +200,7 @@ class MapComponent extends Component {
 
 {/* <!------------------------ Landing Page--------------------------------------------------------------> */}
         <div className="landing_page" id = "landing_page">
-          <div id="landing_title">EASY CARE</div>
+          <div id="landing_title">HAVEN</div>
 
           <div>
             <img id= "green_heart"
@@ -217,7 +217,7 @@ class MapComponent extends Component {
         <div className="sign_in_page" id="sign_in_page">
           <buttom className="back_botton" id="back_sign_in"onClick={this.back_sign }>back</buttom>
           <div className="Sign_main">
-            <div id="landing_title">EASY CARE</div>
+            <div id="landing_title">HAVEN</div>
             <div>
               <img id= "green_heart"
                   src={usericon}
@@ -263,7 +263,7 @@ class MapComponent extends Component {
         <div className="sign_up_page" id="sign_up_page">
           <buttom className="back_botton" id="back_sign_in"onClick={this.back_sign }>back</buttom>
           <div className="Sign_main">
-            <div id="landing_title">EASY CARE</div>
+            <div id="landing_title">HAVEN</div>
             <div>
               <img id= "green_heart"
                   src={usericon}
@@ -336,7 +336,7 @@ class MapComponent extends Component {
       <div>
         {/* <!------------------------------ Main Page of Application----------------------------------------------------------------> */}
         <div className="mental-main" id="mental-main">
-          <buttom className="top-bar" id="top-bar" onClick={this.back_sign}>EASY CARE</buttom>
+          <buttom className="top-bar" id="top-bar" onClick={this.back_sign}>HAVEN</buttom>
           {/*--------------------------------- Bottom Bar ------------------------------- */}
           <div className="bottom_bar" id="bottom_bar">
             <button id = "main-button" onClick={this.show_main_page }>
@@ -371,7 +371,7 @@ class MapComponent extends Component {
           <div className="mental-main-page" id="mental-main-page">
               
             <div className="card">
-              <h2 className="card-title">Emotional exercise</h2>
+              <h2 className="card-title">Medication exercise</h2>
               <div className="exercise-list">
                 <div className="exercise-item">
                   <span>exercise1</span>
@@ -426,14 +426,6 @@ class MapComponent extends Component {
 
                 <div className="dashboard-card">
                   <img className="dashimg" src={dash3} alt="Green Heart"></img>
-                </div>
-
-                <div className="dashboard-card">
-                  <img className="dashimg" src={dash4} alt="Green Heart"></img>
-                </div>
-
-                <div className="dashboard-card">
-                  <img className="dashimg" src={dash5} alt="Green Heart"></img>
                 </div>
 
                
