@@ -371,7 +371,7 @@ class MapComponent extends Component {
           <div className="mental-main-page" id="mental-main-page">
               
             <div className="card">
-              <h2 className="card-title">Medication exercise</h2>
+              <h2 className="card-title">Meditation exercise</h2>
               <div className="exercise-list">
                 <div className="exercise-item">
                   <span>exercise1</span>
