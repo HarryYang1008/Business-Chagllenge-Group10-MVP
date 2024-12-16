@@ -17,6 +17,29 @@ import plan1 from './plan1.png';
 class MapComponent extends Component {
 
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      showPopup: false, // 控制弹窗状态
+      showsubmitPopup: false, 
+    };
+  }
+  
+  // 显示弹窗 2 秒后自动关闭
+  showPopup = () => {
+    this.setState({ showPopup: true });
+    setTimeout(() => {
+      this.setState({ showPopup: false });
+    }, 1000); // 持续 2 秒
+  };
+
+  showsubmitPopup = () => {
+    this.setState({ showsubmitPopup: true });
+    setTimeout(() => {
+      this.setState({ showsubmitPopup: false });
+    }, 1000); // 持续 2 秒
+  };
+
   
 ////////////////////// PAGE Show //////////////
 
@@ -403,15 +426,15 @@ class MapComponent extends Component {
             <div className="card">
               <h2 className="card-title">Meditation exercise</h2>
               <div className="exercise-list">
-                <div className="exercise-item">
+                <div className="exercise-item" onClick={this.showPopup}>
                   <span>exercise1</span>
                   <div className="icon">⚡</div> 
                 </div>
-                <div className="exercise-item">
+                <div className="exercise-item" onClick={this.showPopup}>
                   <span>exercise2</span>
                   <i className="icon">⭐</i> 
                 </div>
-                <div className="exercise-item">
+                <div className="exercise-item" onClick={this.showPopup}>
                   <span>exercise3</span>
                   <div className="icon">🔥</div>
                 </div>
@@ -421,15 +444,15 @@ class MapComponent extends Component {
             <div className="card" id = "">
               <h2 className="card-title">Therapy Informations</h2>
               <div className="exercise-list">
-                <div className="exercise-item">
+                <div className="exercise-item" onClick={this.showPopup}>
                   <span>Therapy Sites 1</span>
                   <div className="icon">❤️</div> 
                 </div>
-                <div className="exercise-item">
+                <div className="exercise-item" onClick={this.showPopup}>
                   <span>Therapy Sites 2</span>
                   <div className="icon">🤗</div> 
                 </div>
-                <div className="exercise-item">
+                <div className="exercise-item" onClick={this.showPopup}>
                   <span>Therapy Sites 3</span>
                   <div className="icon">😺</div>
                 </div>
@@ -446,15 +469,15 @@ class MapComponent extends Component {
             <h2>Emotional Data</h2>
             <div className="card-container">
                 
-                <div className="dashboard-large-card">
+                <div className="dashboard-large-card" onClick={this.showPopup}>
                   <img className="dashimg" src={dash1} alt="Green Heart"></img>
                 </div>
 
-                <div className="dashboard-card">
+                <div className="dashboard-card" onClick={this.showPopup}>
                   <img className="dashimg" src={dash2} alt="Green Heart"></img>
                 </div>
 
-                <div className="dashboard-card">
+                <div className="dashboard-card" onClick={this.showPopup}>
                   <img className="dashimg" src={dash3} alt="Green Heart"></img>
                 </div>
 
@@ -519,7 +542,10 @@ class MapComponent extends Component {
                 pattern="^[a-zA-Z0-9_]+$"
                   autocomplete="off"
               />
-            </form>
+              </form>
+              
+                  <button  onClick={this.showsubmitPopup}>submit</button>
+              
             
           </div>
             
@@ -617,15 +643,15 @@ class MapComponent extends Component {
             <div className="card">
               <h2 className="card-title">12/15/2024</h2>
               <div className="exercise-list">
-                <div className="exercise-item">
+                <div className="exercise-item" onClick={this.showPopup}>
                   <span>exercise1</span>
-                  <div className="icon">⚡</div> 
+                  <div className="icon" >⚡</div> 
                 </div>
-                <div className="exercise-item">
+                <div className="exercise-item" onClick={this.showPopup}>
                   <span>exercise2</span>
                   <i className="icon">⭐</i> 
                 </div>
-                <div className="exercise-item">
+                <div className="exercise-item" onClick={this.showPopup}>
                   <span>exercise3</span>
                   <div className="icon">🔥</div>
                 </div>
@@ -634,15 +660,15 @@ class MapComponent extends Component {
               <div className="card">
               <h2 className="card-title">12/14/2024</h2>
               <div className="exercise-list">
-                <div className="exercise-item">
+                <div className="exercise-item" onClick={this.showPopup}>
                   <span>exercise1</span>
                   <div className="icon">⚡</div> 
                 </div>
-                <div className="exercise-item">
+                <div className="exercise-item" onClick={this.showPopup}>
                   <span>exercise2</span>
                   <i className="icon">⭐</i> 
                 </div>
-                <div className="exercise-item">
+                <div className="exercise-item" onClick={this.showPopup}>
                   <span>exercise3</span>
                   <div className="icon">🔥</div>
                 </div>
@@ -656,7 +682,46 @@ class MapComponent extends Component {
         </div>
 
         
+      </div>
+      {this.state.showPopup && (
+        <div
+          style={{
+            position: "fixed",
+            bottom: "30%",
+            left: "50%",
+            transform: "translateX(-50%)",
+            backgroundColor: "#333",
+            color: "#fff",
+            padding: "10px 20px",
+            borderRadius: "10px",
+            fontSize: "16px",
+            boxShadow: "0px 2px 5px rgba(0, 0, 0, 0.3)",
+            zIndex: 1000,
+          }}
+        >
+          Coming Soon
         </div>
+        )}
+        {this.state.showsubmitPopup && (
+        <div
+          style={{
+            position: "fixed",
+            bottom: "30%",
+            left: "50%",
+            transform: "translateX(-50%)",
+            backgroundColor: "#333",
+            color: "#fff",
+            padding: "10px 20px",
+            borderRadius: "10px",
+            fontSize: "16px",
+            boxShadow: "0px 2px 5px rgba(0, 0, 0, 0.3)",
+            zIndex: 1000,
+          }}
+        >
+          submit sucess
+        </div>
+      )}
+        
       </div>
     );
   }
