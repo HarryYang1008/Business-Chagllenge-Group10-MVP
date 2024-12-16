@@ -125,6 +125,8 @@ class MapComponent extends Component {
     second_layer.style.display = 'block';
     const contact_us_page= document.getElementById('contact-us-detailed');
     contact_us_page.style.display = 'block';
+    const historypage= document.getElementById('historypage');
+    historypage.style.display = 'none';
     const change_subscription = document.getElementById('change_subscription');
     change_subscription.style.display = 'none';
     const ManagePage=document.getElementById('Manage_Page');
@@ -148,6 +150,8 @@ class MapComponent extends Component {
     second_layer.style.display = 'block';
     const ManagePage=document.getElementById('Manage_Page');
     ManagePage.style.display = 'block';
+    const historypage= document.getElementById('historypage');
+    historypage.style.display = 'none';
     const contact_us_page= document.getElementById('contact-us-detailed');
     contact_us_page.style.display = 'none';
     const change_subscription = document.getElementById('change_subscription');
@@ -171,6 +175,8 @@ class MapComponent extends Component {
     change_subscription.style.display = 'block';
     const second_layer= document.getElementById('second_layer');
     second_layer.style.display = 'block';
+    const historypage= document.getElementById('historypage');
+    historypage.style.display = 'none';
     const ManagePage=document.getElementById('Manage_Page');
     ManagePage.style.display = 'none';
     const contact_us_page= document.getElementById('contact-us-detailed');
@@ -189,6 +195,30 @@ class MapComponent extends Component {
     landing_page.style.display = 'none';
   }
 
+  show_history_page = () => {
+    const historypage= document.getElementById('historypage');
+    historypage.style.display = 'block';
+    const change_subscription = document.getElementById('change_subscription');
+    change_subscription.style.display = 'none';
+    const second_layer= document.getElementById('second_layer');
+    second_layer.style.display = 'block';
+    const ManagePage=document.getElementById('Manage_Page');
+    ManagePage.style.display = 'none';
+    const contact_us_page= document.getElementById('contact-us-detailed');
+    contact_us_page.style.display = 'none';
+    const mental_profile= document.getElementById('mental-profile');
+    mental_profile.style.display = 'none';
+    const mental_dashboard= document.getElementById('mental-dashboard');
+    mental_dashboard.style.display = 'none';
+    const main_page= document.getElementById('mental-main-page');
+    main_page.style.display = 'none';
+    const sign_in_page = document.getElementById('sign_in_page');
+    sign_in_page.style.display = 'none';
+    const sign_up_page = document.getElementById('sign_up_page');
+    sign_up_page.style.display = 'none';
+    const landing_page= document.getElementById('landing_page');
+    landing_page.style.display = 'none';
+  }
   
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -449,7 +479,7 @@ class MapComponent extends Component {
               <div id="profile-menu">
                 <button class="menu-item" onClick ={this.show_Manage_page}>Manage My Account</button>
                 <button class="menu-item"  onClick ={this.show_subscription_page}>Change Subscription</button>
-                <button class="menu-item">Mental Assesement History</button>
+                <button class="menu-item" onClick={this.show_history_page}>Mental Assesement History</button>
                 <button class="menu-item" onClick = {this.show_contact_page}>Contact Us</button>
               </div>
 
@@ -581,6 +611,43 @@ class MapComponent extends Component {
               </div>
             </div>
               
+          </div>
+            
+          <div class = "historypage" id="historypage">
+            <div className="card">
+              <h2 className="card-title">12/15/2024</h2>
+              <div className="exercise-list">
+                <div className="exercise-item">
+                  <span>exercise1</span>
+                  <div className="icon">⚡</div> 
+                </div>
+                <div className="exercise-item">
+                  <span>exercise2</span>
+                  <i className="icon">⭐</i> 
+                </div>
+                <div className="exercise-item">
+                  <span>exercise3</span>
+                  <div className="icon">🔥</div>
+                </div>
+              </div>
+              </div>
+              <div className="card">
+              <h2 className="card-title">12/14/2024</h2>
+              <div className="exercise-list">
+                <div className="exercise-item">
+                  <span>exercise1</span>
+                  <div className="icon">⚡</div> 
+                </div>
+                <div className="exercise-item">
+                  <span>exercise2</span>
+                  <i className="icon">⭐</i> 
+                </div>
+                <div className="exercise-item">
+                  <span>exercise3</span>
+                  <div className="icon">🔥</div>
+                </div>
+              </div>
+            </div>
           </div>
               
 

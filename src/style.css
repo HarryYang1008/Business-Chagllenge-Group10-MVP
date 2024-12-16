@@ -476,7 +476,9 @@ h2 {
   margin-bottom: 80px;
 }
 
-
+#historypage{
+  display:none;
+}
 
 .Plan-large-card {
   background-color: #fff; 
