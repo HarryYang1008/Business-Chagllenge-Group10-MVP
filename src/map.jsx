@@ -639,7 +639,8 @@ class MapComponent extends Component {
               
           </div>
             
-          <div class = "historypage" id="historypage">
+            <div class="historypage" id="historypage">
+            <h2>Your Assesement History</h2>
             <div className="card">
               <h2 className="card-title">12/15/2024</h2>
               <div className="exercise-list">

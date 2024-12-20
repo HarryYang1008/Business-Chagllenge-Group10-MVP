@@ -78,11 +78,11 @@ const SentimentAnalysis = () => {
             <h2>Analysis result:</h2>
             <div>
                 <div> The Max Score is 1</div>
-                <p><strong>Overall Sentiment Score:</strong> {analysisResult.sentimentScore}</p>
+                <p><strong style={{ textAlign: "left" }}>Overall Sentiment Score:</strong> {analysisResult.sentimentScore}</p>
                 <h3>Sentence Analysis:</h3>
                 <ul>
                     {analysisResult.sentences.map((sentence, index) => (
-                    <li key={index}>
+                    <li key={index} style={{ textAlign: "left" }}>
                         <strong>Sentence:</strong> {sentence.text} <br />
                         <strong>Sentiment Score:</strong> {sentence.score}
                     </li>
