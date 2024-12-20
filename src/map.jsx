@@ -427,15 +427,15 @@ class MapComponent extends Component {
               <h2 className="card-title">Meditation exercise</h2>
               <div className="exercise-list">
                 <div className="exercise-item" onClick={this.showPopup}>
-                  <span>exercise1</span>
+                  <span>Emotional Regulation Practice</span>
                   <div className="icon">⚡</div> 
                 </div>
                 <div className="exercise-item" onClick={this.showPopup}>
-                  <span>exercise2</span>
+                  <span>Loving-Kindness Meditation</span>
                   <i className="icon">⭐</i> 
                 </div>
                 <div className="exercise-item" onClick={this.showPopup}>
-                  <span>exercise3</span>
+                  <span>Mindful Breathing</span>
                   <div className="icon">🔥</div>
                 </div>
               </div>
@@ -445,15 +445,15 @@ class MapComponent extends Component {
               <h2 className="card-title">Therapy Informations</h2>
               <div className="exercise-list">
                 <div className="exercise-item" onClick={this.showPopup}>
-                  <span>Therapy Sites 1</span>
+                  <span>Probody Physical Therapy</span>
                   <div className="icon">❤️</div> 
                 </div>
                 <div className="exercise-item" onClick={this.showPopup}>
-                  <span>Therapy Sites 2</span>
+                  <span>Revive counseling and wellness center</span>
                   <div className="icon">🤗</div> 
                 </div>
                 <div className="exercise-item" onClick={this.showPopup}>
-                  <span>Therapy Sites 3</span>
+                  <span>Boston Physical Therapy & Wellness</span>
                   <div className="icon">😺</div>
                 </div>
               </div>
@@ -645,15 +645,15 @@ class MapComponent extends Component {
               <h2 className="card-title">12/15/2024</h2>
               <div className="exercise-list">
                 <div className="exercise-item" onClick={this.showPopup}>
-                  <span>exercise1</span>
+                  <span>Gratitude Journaling</span>
                   <div className="icon" >⚡</div> 
                 </div>
                 <div className="exercise-item" onClick={this.showPopup}>
-                  <span>exercise2</span>
+                  <span>Emotion Identification</span>
                   <i className="icon">⭐</i> 
                 </div>
                 <div className="exercise-item" onClick={this.showPopup}>
-                  <span>exercise3</span>
+                  <span>Loving-Kindness Meditation</span>
                   <div className="icon">🔥</div>
                 </div>
               </div>
@@ -662,15 +662,15 @@ class MapComponent extends Component {
               <h2 className="card-title">12/14/2024</h2>
               <div className="exercise-list">
                 <div className="exercise-item" onClick={this.showPopup}>
-                  <span>exercise1</span>
+                  <span> Emotional Regulation Practice</span>
                   <div className="icon">⚡</div> 
                 </div>
                 <div className="exercise-item" onClick={this.showPopup}>
-                  <span>exercise2</span>
+                  <span>Compassionate Letter Writing</span>
                   <i className="icon">⭐</i> 
                 </div>
                 <div className="exercise-item" onClick={this.showPopup}>
-                  <span>exercise3</span>
+                  <span>Mindful Breathing</span>
                   <div className="icon">🔥</div>
                 </div>
               </div>
