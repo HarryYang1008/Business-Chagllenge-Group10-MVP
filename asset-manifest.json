@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Business-Chagllenge-Group10-MVP/static/css/main.5486b4bb.css",
-    "main.js": "/Business-Chagllenge-Group10-MVP/static/js/main.9ffe74ea.js",
+    "main.css": "/Business-Chagllenge-Group10-MVP/static/css/main.f56c3351.css",
+    "main.js": "/Business-Chagllenge-Group10-MVP/static/js/main.3cda75ca.js",
     "static/js/787.4bbbca62.chunk.js": "/Business-Chagllenge-Group10-MVP/static/js/787.4bbbca62.chunk.js",
     "static/media/green_heart.png": "/Business-Chagllenge-Group10-MVP/static/media/green_heart.5f34442a4296b0f9a5c1.png",
     "static/media/news1.jpg": "/Business-Chagllenge-Group10-MVP/static/media/news1.fd695674a6a07eafe87d.jpg",
@@ -17,12 +17,12 @@
     "static/media/dashboard_icon.png": "/Business-Chagllenge-Group10-MVP/static/media/dashboard_icon.10247751470c76a422ee.png",
     "static/media/logo.svg": "/Business-Chagllenge-Group10-MVP/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/Business-Chagllenge-Group10-MVP/index.html",
-    "main.5486b4bb.css.map": "/Business-Chagllenge-Group10-MVP/static/css/main.5486b4bb.css.map",
-    "main.9ffe74ea.js.map": "/Business-Chagllenge-Group10-MVP/static/js/main.9ffe74ea.js.map",
+    "main.f56c3351.css.map": "/Business-Chagllenge-Group10-MVP/static/css/main.f56c3351.css.map",
+    "main.3cda75ca.js.map": "/Business-Chagllenge-Group10-MVP/static/js/main.3cda75ca.js.map",
     "787.4bbbca62.chunk.js.map": "/Business-Chagllenge-Group10-MVP/static/js/787.4bbbca62.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5486b4bb.css",
-    "static/js/main.9ffe74ea.js"
+    "static/css/main.f56c3351.css",
+    "static/js/main.3cda75ca.js"
   ]
 }
